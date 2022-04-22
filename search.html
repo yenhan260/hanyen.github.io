@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+ <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+ <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+ 
+    
+   
+</head>
+<body>
+    <nav class="navbar navbar-primary navbar-fixed-top" style="background-color: #e3f2fd;">
+       <div class="container-fluid">
+         <div class="navbar-header">
+           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>
+             <span class="icon-bar"></span>                        
+           </button>
+           <img class="navbar-brand" src="ptit.png" alt="">
+           <a class="navbar-brand" href="#myPage">TIÊM CHỦNG COVID-19 PTIT</a>
+         </div>
+         <div class="collapse navbar-collapse" id="myNavbar"> 
+           <ul class="nav navbar-nav navbar-right">
+             <li><a href="index.html">Trang chủ</a></li>
+             <li><a href="#form">Đăng kí tiêm</a></li>
+             <li><a href="#search">Tra cứu</a></li>
+             <li class="dropdown">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#">Xem thêm
+               <span class="caret"></span></a>
+               <ul class="dropdown-menu">
+                 <li><a href="#">Thông tin Vac-xin ngừa Covid-19</a></li>
+                 <li><a href="#">Qui trình tiêm chủng</a></li>
+                 <li><a href="#">Hướng dẫn bảo vệ sức khỏe sau khi tiêm</a></li> 
+               </ul>
+             </li>
+             <li>
+               <a href="">
+                 <button id="btn" type="button" class="btn btn-outline-primary btn-primary ">Đăng nhập</button>
+               </a>
+             </li>
+             <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
+           </ul>
+         </div>
+       </div>
+   </nav>
+    <div class="container" id="sh">
+        <h3 class="text-uppercase text-danger">Tra cứu chứng nhận tiêm</h3>
+        <form>
+            <div class="form-row">
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault01">Họ và tên</label>
+                    <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="Nhập họ và tên" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <label for="validationDefault02">Ngày sinh</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Ngày/Tháng/Năm" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="form-group">
+                        <label for="exampleFormControlSelect1">Giới tính</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>   </option>
+                            <option>Nam</option>
+                            <option>Nữ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="col-md-6">
+                    <label for="validationDefault02">Số điện thoại</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Số điện thoại" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="validationDefault02">Số CCCD/CMT</label>
+                    <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="Số CCCD/CMT" required>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="btn btn-primary" type="submit">Tra cứu</button>
+            </div>
+        </form>
+    </div>
+</body>
